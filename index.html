@@ -25,14 +25,17 @@
                             <input id="bill_input" type="text">
                         </div> <br>
                         <div class="input-field col s12">
+                            <label for="split_input">Split Bill</label>
+                            <input id="split_input" type="number" min="1" max="10" value="1">
+                        </div> <br>
+                        <div class="input-field col s12">
                             <button class="btn-floating btn-large waves-effect waves-light red" onclick="tip15()">15%</button>
                             <button class="btn-floating btn-large waves-effect waves-light red" onclick="tip18()">18%</button>
                             <button class="btn-floating btn-large waves-effect waves-light red" onclick="tip20()">20%</button>
                             <button class="btn-floating btn-large waves-effect waves-light red" onclick="tipOther()">other</button>
-                        </div> <br>
-                        <div class="input-field col s12">
-                            <label for="split_input">Split Bill</label>
-                            <input id="split_input" type="number" min="1" max="10" value="1">
+                            <div id="other">
+                                <input id="other_input" type="text">
+                            </div>
                         </div> <br>
                     </div>
 
@@ -42,13 +45,17 @@
         <h3>Calculation</h3>
         <div class="calculator-container">
             <div class="row">
-                <div class="col s6">
-                    <label>New Bill</label> <br>
-                    <input id="bill_total" type="text">
+                <div class="col s12">
+                    <label>Total Tip Amount</label>  <br>
+                    <input id="tip_total" type="text">
                 </div>
                 <div class="col s6">
-                    <label>Tip Amount</label>  <br>
-                    <input id="tip_total" type="text">
+                    <label>Tip (per person)</label> <br>
+                    <input id="split_tip" type="text">
+                </div> 
+                <div class="col s6">
+                    <label>Total (per person)</label> <br>
+                    <input id="split_total" type="text">
                 </div> 
             </div>
         </div>
