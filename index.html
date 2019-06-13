@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>Tip Calculator</h3>
+        <div class="calculator-container">
+            <div class="row">
+
+                        <div class="input-field col s12">
+                            <label for="bill_input">Total Bill</label>
+                            <input id="bill_input" type="text">
+                        </div> <br>
+                        <div class="input-field col s12">
+                            <button class="btn-floating btn-large waves-effect waves-light red" onclick="tip15()">15%</button>
+                            <button class="btn-floating btn-large waves-effect waves-light red" onclick="tip18()">18%</button>
+                            <button class="btn-floating btn-large waves-effect waves-light red" onclick="tip20()">20%</button>
+                            <button class="btn-floating btn-large waves-effect waves-light red" onclick="tipOther()">other</button>
+                        </div> <br>
+                        <div class="input-field col s12">
+                            <label for="split_input">Split Bill</label>
+                            <input id="split_input" type="number" min="1" max="10" value="1">
+                        </div> <br>
+                    </div>
+
+
+        </div> <br>
+
+        <h3>Calculation</h3>
+        <div class="calculator-container">
+            <div class="row">
+                <div class="col s6">
+                    <label>New Bill</label> <br>
+                    <input id="bill_total" type="text">
+                </div>
+                <div class="col s6">
+                    <label>Tip Amount</label>  <br>
+                    <input id="tip_total" type="text">
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="assets/javascript/calculator.js"></script>
+</body>
+
+</html>

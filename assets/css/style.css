@@ -1,0 +1,14 @@
+.container {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.calculator-container {
+    position: relative;
+    margin: auto;
+    padding: 1rem;
+    width:70%;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+}
